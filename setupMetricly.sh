@@ -34,6 +34,13 @@ curl -X POST -u $username:$password -F 'email='$setEmail -F 'password='$password
 echo "A new tenant account has been created"
 
 
+#create new json file with all the datasource IDs for the new tenant account
+#wait 10 second before calling the API to let the provision complete
+echo "A new file called listDatasources.json is being created with IDs required to install the agents.  Wait 10 seconds..."
+sleep 10
+curl -X GET -u $setEmail:$passwordNew https://api.app.metricly.com/datasources?includeElements=true >> listDatasources.json
+
+
 if [ $installPackage == 'yes' ]; then
 #wait 10 second before calling package endpoint with new credentials
 echo "Completing account setup in 10 seconds..."

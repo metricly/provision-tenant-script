@@ -16,6 +16,6 @@ Instructions:
 
 6. Currently the package install can be turned off/on.  The package name must be package.zip and needs to be stored in the same location as the script.
 
-Note: Metricly support team will need to build your package today.  Contact Metricly support if you want to have a custom package created for your account.  https://www.metricly.com/support/api/packages
+Note: Metricly support team will need to build your package today.  Contact Metricly support if you want to have a custom package created for your account.  https://docs.virtana.com/en/packages-api.html
 
 Note: Any issues will be writen into a file called logFile.txt.  This file will be created in the same location as the script.
